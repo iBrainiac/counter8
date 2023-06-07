@@ -10,6 +10,10 @@ contract mathOperations {
         return y - z;
     }
 
+    function multiply(uint256 y, uint256 z) public pure returns (uint256) {
+        return y * z;
+    }
+
     function divide(uint256 y, uint256 z) public pure returns (uint256) {
         require(y != 0, "Cannot divide by zero");
         return y / z;
